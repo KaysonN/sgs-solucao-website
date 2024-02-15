@@ -1,0 +1,146 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between; /* Distribui as colunas uniformemente */
+  align-items: center;
+  padding: 7em; /* Reduzir o padding ainda mais para espaçamento menor em dispositivos menores */
+}
+
+.column {
+  display: flex;
+  flex-direction: column; /* Coloca os itens verticalmente em cada coluna */
+}
+
+/* Estilos específicos para as informações de contato */
+.contact-info div {
+  margin-bottom: 5px; /* Adiciona espaço entre as informações de contato */
+  color: #000000; /* Cor do texto */
+}
+
+/* Estilos específicos para os links */
+.links a {
+  text-decoration: none !important; /* Remove o sublinhado dos links */
+  color: #000000; /* Cor do texto */
+  list-style: none !important;
+}
+
+/* Estilos específicos para os ícones */
+.material-icons {
+  margin-right: 5px; /* Adiciona espaço entre o ícone e o texto */
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #fff;
+  border: 0.5px solid #6e0607;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 12em;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #efefef;
+}
+
+.phone-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #fff;
+  border: 0.5px solid #6e0607;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 9.4em;
+}
+
+.phone-btn:hover {
+  background-color: #efefef;
+}
+
+/* Estilos para a lista de links */
+.links ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.links li {
+  margin-bottom: 5px; /* Adiciona espaço entre os itens da lista */
+}
+
+.links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.material-icons {
+  margin-right: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column; /* Coloca os itens verticalmente em cada coluna */
+}
+
+/* Estilos específicos para a logo */
+.logo {
+  max-height: 100px; /* Define a altura máxima da logo */
+}
+
+/* Estilos específicos para as informações de contato */
+.contact-info div {
+  margin-bottom: 5px; /* Adiciona espaço entre as informações de contato */
+  color: #000000; /* Cor do texto */
+}
+
+/* Estilos específicos para os links */
+.links a {
+  text-decoration: none !important; /* Remove o sublinhado dos links */
+  color: #000000; /* Cor do texto */
+  list-style: none !important;
+}
+
+.links ul li a:hover {
+  color: #6e0607;
+}
+
+/* Estilos específicos para os ícones */
+.material-icons {
+  margin-right: 5px; /* Adiciona espaço entre o ícone e o texto */
+}
+
+/* Adicionar media queries para tornar o footer responsivo */
+@media screen and (max-width: 950px) {
+  .footer {
+    flex-direction: column; /* Altera a direção do flex para coluna em dispositivos menores */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    padding: 10em; /* Reduzir o padding ainda mais para espaçamento menor em dispositivos menores */
+    text-align: center;
+  }
+
+  .column {
+    margin-bottom: 0.1em; /* Adiciona espaço entre as colunas em dispositivos menores */
+    margin-left: -1.5em;
+  }
+
+  .show-mobile {
+    border: 1px solid rgb(173, 173, 173);
+    width: 100%;
+  }
+
+  .logo {
+    margin-bottom: -1em;
+  }
+}

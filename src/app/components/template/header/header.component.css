@@ -1,15 +1,95 @@
+
+
 .header {
   background-color: #8C0C0D;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 5em;
+  /* padding: 0 10em; */
 }
 
-.header a {
+.logo-container {
+  flex: 1;
+}
+
+.menu-container {
   display: flex;
-  align-items: center;
-  text-decoration: none;
+  justify-content: center; /* Centraliza os itens do menu */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+.menu-container a {
+  margin: 0 1em; /* Adiciona espaço entre os itens do menu */
+  text-decoration: none !important;
+  color: #fff;
+  position: relative; /* Para posicionar corretamente a linha de sublinhado */
 }
 
 .header .logo {
-  max-height: 10em;
+  max-height: 4em;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    background-color: #8C0C0D;
+    z-index: 1000;
+    align-items: start;
+  }
+
+  .open a {
+    margin: 0.5em 0;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+  }
+
+  .open a:hover {
+    background-color: #6e0607;
+  }
+}
+
+/* Estilos para dispositivos que não são móveis */
+@media (min-width: 601px) {
+  .menu-container a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
+
+  .menu-container a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Posicionamento da linha de sublinhado */
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0); /* Inicialmente, a linha de sublinhado estará escondida */
+    transition: transform 0.3s ease; /* Adicionando animação de transformação */
+  }
+
+  .menu-container a:hover::after {
+    transform: scaleX(1); /* Mostra a linha de sublinhado ao passar o mouse */
+  }
 }
