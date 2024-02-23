@@ -5,6 +5,8 @@
   justify-content: space-between; /* Distribui as colunas uniformemente */
   align-items: center;
   padding: 7em; /* Reduzir o padding ainda mais para espaçamento menor em dispositivos menores */
+  vertical-align: top !important;
+
 }
 
 .column {
@@ -23,6 +25,12 @@
   text-decoration: none !important; /* Remove o sublinhado dos links */
   color: #000000; /* Cor do texto */
   list-style: none !important;
+  /* padding-top: 5px !important; */
+}
+
+.links ul li a{
+  padding-top: 5px !important;
+  margin-top: 2px !important;
 }
 
 /* Estilos específicos para os ícones */
@@ -143,4 +151,8 @@
   .logo {
     margin-bottom: -1em;
   }
+}
+
+h1 {
+  color: #6e0607;
 }
