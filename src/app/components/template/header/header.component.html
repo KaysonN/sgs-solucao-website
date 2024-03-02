@@ -1,6 +1,6 @@
 <mat-toolbar class="header mat-elevation-z5">
   <div class="logo-container">
-    <a>
+    <a routerLink="/">
       <img class="logo" src="../assets/img/logo-header.png" alt="LOGO">
     </a>
   </div>
@@ -8,10 +8,10 @@
     <mat-icon>menu</mat-icon>
   </button>
   <div class="menu-container" [ngClass]="{'open': isMenuOpen}">
-    <a href="#">Inicio</a>
-    <a href="#">Quem Somos</a>
-    <a href="#">Contato</a>
-    <a href="#">Organograma</a>
-    <a href="#">Estatuto</a>
+    <a href="/">Inicio</a>
+    <a href="/quem-somos">Quem Somos</a>
+    <!-- <a href="/contato">Contato</a> -->
+    <a href="/organograma">Organograma</a>
+    <a href="/estatuto">Estatuto</a>
   </div>
 </mat-toolbar>

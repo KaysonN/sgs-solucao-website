@@ -22,11 +22,11 @@
     <h1 style="font-weight: bold">Institucional</h1>
     <div class="links">
       <ul style="margin-top: -0.1em !important">
-        <li><a href="#">Quem somos</a></li>
-        <li><a href="#">Programa de integridade</a></li>
-        <li><a href="#">Regimento interno</a></li>
-        <li><a href="#">Equipe</a></li>
-        <li><a href="#">Código de Ética</a></li>
+        <li><a routerLink="/quem-somos">Quem somos</a></li>
+        <li><a href="/programa-de-integridade">Programa de integridade</a></li>
+        <li><a href="/regime-interno">Regimento interno</a></li>
+        <li><a href="/equipe">Equipe</a></li>
+        <li><a href="/codigo-de-etica">Código de Ética</a></li>
       </ul>
     </div>
   </div>
@@ -38,7 +38,7 @@
   >
 </button>
 
-<button class="phone-btn" (click)="redirectToContactScreen()">
+<button routerLink="/contato" class="phone-btn">
   <mat-icon style="color: #6e0607; margin-top: 0.2em; margin-left: 0.2em"
     >phone</mat-icon
   >

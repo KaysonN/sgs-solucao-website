@@ -1,12 +1,11 @@
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   display: flex;
   justify-content: space-between; /* Distribui as colunas uniformemente */
   align-items: center;
   padding: 7em; /* Reduzir o padding ainda mais para espaçamento menor em dispositivos menores */
   vertical-align: top !important;
-
 }
 
 .column {
@@ -51,7 +50,7 @@
   font-size: 24px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 12em;
+  margin-bottom: 4.5em;
 }
 
 .scroll-to-top-btn:hover {
@@ -71,7 +70,7 @@
   font-size: 24px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 9.4em;
+  margin-bottom: 1.5em;
 }
 
 .phone-btn:hover {
@@ -136,6 +135,7 @@
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     padding: 10em; /* Reduzir o padding ainda mais para espaçamento menor em dispositivos menores */
     text-align: center;
+    height: 550px;
   }
 
   .column {
@@ -155,4 +155,25 @@
 
 h1 {
   color: #6e0607;
+}
+
+
+.scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+.scroll-to-top-btn.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Adicionando animação suave */
+html {
+  scroll-behavior: smooth;
 }
